@@ -1,48 +1,70 @@
-const artworks = [
+// build artwork gallery automatically
 
-"art/painting-001.html",
-"art/painting-002.html",
-"art/zen-001.html"
+function buildGallery() {
 
-];
+const gallery = document.querySelector(".gallery");
+
+if (!gallery) return;
+
+gallery.innerHTML = "";
+
+artworks.forEach(art => {
+
+const link = document.createElement("a");
+
+link.href = art.page;
+
+const img = document.createElement("img");
+
+img.src = art.image;
+
+img.alt = art.title;
+
+link.appendChild(img);
+
+gallery.appendChild(link);
+
+});
+
+}
+
+
+
+// random artwork
 
 function randomArtwork() {
 
-const randomIndex = Math.floor(Math.random() * artworks.length);
+const art = artworks[Math.floor(Math.random() * artworks.length)];
 
-window.location.href = artworks[randomIndex];
+window.location.href = art.page;
+
+}
+
+
+
+// build archive automatically
+
+function buildArchive() {
+
+const archive = document.querySelector(".archive-list");
+
+if (!archive) return;
+
+archive.innerHTML = "";
+
+artworks.forEach(art => {
+
+const li = document.createElement("li");
+
+li.innerHTML = `${art.year} — <a href="${art.page}">${art.title}</a>`;
+
+archive.appendChild(li);
+
+});
 
 }
 
-function openFullscreen(img) {
 
-let overlay = document.createElement("div");
 
-overlay.style.position = "fixed";
-overlay.style.top = "0";
-overlay.style.left = "0";
-overlay.style.width = "100%";
-overlay.style.height = "100%";
-overlay.style.background = "rgba(0,0,0,0.95)";
-overlay.style.display = "flex";
-overlay.style.alignItems = "center";
-overlay.style.justifyContent = "center";
-overlay.style.zIndex = "1000";
-
-let fullImage = document.createElement("img");
-
-fullImage.src = img.src;
-
-fullImage.style.maxWidth = "95%";
-fullImage.style.maxHeight = "95%";
-fullImage.style.boxShadow = "0 30px 60px rgba(0,0,0,0.8)";
-
-overlay.appendChild(fullImage);
-
-overlay.onclick = function () {
-document.body.removeChild(overlay);
-};
-
-document.body.appendChild(overlay);
-
-}
+buildGallery();
+buildArchive();
