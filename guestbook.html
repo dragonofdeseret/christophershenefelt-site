@@ -9,11 +9,12 @@
 
 <body>
 
-<header>
+<div class="layout">
 
-<h1>Guestbook</h1>
+<nav class="sidebar">
 
-<nav>
+<h1>Christopher Shenefelt</h1>
+
 <a href="index.html">Home</a>
 <a href="art.html">Art</a>
 <a href="writing.html">Writing</a>
@@ -21,22 +22,21 @@
 <a href="now.html">Now</a>
 <a href="guestbook.html">Guestbook</a>
 <a href="bio.html">Bio</a>
+
 </nav>
 
-</header>
+<main class="content">
 
-<main>
+<h2>Guestbook</h2>
 
-<p style="text-align:center; max-width:600px; margin:auto; line-height:1.6;">
-Visitors are welcome to leave a short note in the guestbook.<br><br>
-Messages around <strong>280 characters</strong> are perfect.
+<p>
+Leave a short message or reflection.
 </p>
 
-<br><br>
+<div class="guestbook">
 
-<div id="giscus-container"></div>
+<!-- giscus script goes here -->
 
-<!-- Giscus Guestbook -->
 <script src="https://giscus.app/client.js"
         data-repo="dragonofdeseret/christophershenefelt-site"
         data-repo-id="R_kgDORjXVBg"
@@ -53,7 +53,10 @@ Messages around <strong>280 characters</strong> are perfect.
         async>
 </script>
 
+</div>
+
 </main>
 
-</body>
+</div>
+
 </html>
