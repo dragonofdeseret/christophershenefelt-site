@@ -1,16 +1,16 @@
-const pages = [
+const works = [
 
-"art.html",
+"art/glow-landscape.html",
+
 "writing.html",
-"archive.html",
-"bio.html"
+"archive.html"
 
 ];
 
 function randomPage() {
 
-const randomIndex = Math.floor(Math.random() * pages.length);
+const randomIndex = Math.floor(Math.random() * works.length);
 
-window.location.href = pages[randomIndex];
+window.location.href = works[randomIndex];
 
 }
