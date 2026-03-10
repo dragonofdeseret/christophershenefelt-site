@@ -1,18 +1,28 @@
 body {
 
-background: black;
+background-color: #0b0b0b;
+
+background-image: url("images/ui/texture.png");
+
 color: white;
+
 font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 margin: 0;
+
+padding: 40px;
+
 line-height: 1.6;
 
 }
 
 header {
 
-border-bottom: 1px solid #222;
-padding: 30px 0;
-text-align: center;
+border-bottom: 1px solid rgba(255,255,255,0.08);
+
+padding-bottom: 20px;
+
+margin-bottom: 40px;
 
 }
 
@@ -271,5 +281,17 @@ transition: transform 0.25s ease, box-shadow 0.25s ease;
 transform: scale(1.04);
 
 box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
+}
+
+.art-image img {
+
+background: #111;
+
+padding: 10px;
+
+border-radius: 4px;
+
+box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 
 }
