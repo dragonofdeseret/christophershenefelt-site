@@ -391,3 +391,58 @@ padding: 0;
 margin-top: 8px;
 
 }
+
+.layout {
+
+display: flex;
+min-height: 100vh;
+
+}
+
+.sidebar {
+
+width: 220px;
+
+padding: 40px 30px;
+
+border-right: 1px solid #444;
+
+display: flex;
+flex-direction: column;
+
+gap: 18px;
+
+}
+
+.sidebar h1 {
+
+font-size: 18px;
+margin-bottom: 20px;
+
+}
+
+.sidebar a {
+
+text-decoration: none;
+color: white;
+opacity: 0.85;
+
+transition: opacity 0.2s;
+
+}
+
+.sidebar a:hover {
+
+opacity: 1;
+
+}
+
+.content {
+
+flex: 1;
+
+padding: 60px;
+
+max-width: 900px;
+
+}
