@@ -164,3 +164,38 @@ font-size:14px;
 background:#fff;
 color:#000;
 }
+.intro {
+max-width: 600px;
+margin: 40px auto;
+font-size: 18px;
+line-height: 1.6;
+text-align: center;
+}
+
+.list {
+list-style: none;
+padding: 0;
+}
+
+.list li {
+margin: 10px 0;
+}
+
+.random {
+margin-top: 60px;
+text-align: center;
+}
+
+button {
+background: none;
+border: 1px solid white;
+color: white;
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:hover {
+background: white;
+color: black;
+}

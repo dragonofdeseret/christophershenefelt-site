@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Christopher Shenefelt</title>
@@ -9,45 +9,51 @@
 <body>
 
 <header>
-
 <h1>Christopher Shenefelt</h1>
 
-<p>Painter and writer in Northern Utah.</p>
-
 <nav>
-<a href="archive.html">Archive</a>
 <a href="art.html">Art</a>
 <a href="writing.html">Writing</a>
+<a href="archive.html">Archive</a>
 <a href="bio.html">Bio</a>
-<a href="now.html">Now</a>
-<a href="random.html">Random</a>
-<a href="guestbook.html">Guestbook</a>
 </nav>
-
 </header>
 
-<h2>Latest</h2>
+<main>
 
-<p>Welcome to my archive of artwork and writing.</p>
+<section class="intro">
+<p>
+Oil paintings and charcoal sketches.  
+Philosophical and theological writing.  
+An ongoing archive of work and practice.
+</p>
+</section>
 
-<ul>
+<section>
+<h2>Latest Art</h2>
 
-<li>
-2026-03-09 — Essay —
-<a href="posts/example-essay.html">Example Essay</a>
-</li>
-
-<li>
-2026-03-08 — Painting —
-<a href="art/example-painting.html">Blue Landscape</a>
-</li>
-
-<li>
-2026-03-07 — Sketch —
-<a href="art/example-sketch.html">Zen Sketch #1</a>
-</li>
-
+<ul class="list">
+<li>2026 — <a href="#">Glow Landscape Study</a></li>
+<li>2026 — <a href="#">Zen Sketch 031</a></li>
 </ul>
+</section>
+
+<section>
+<h2>Latest Writing</h2>
+
+<ul class="list">
+<li>2026 — <a href="#">Notes on Dao and Zion</a></li>
+<li>2026 — <a href="#">Meditation Journal</a></li>
+</ul>
+</section>
+
+<section class="random">
+<button onclick="randomPage()">show me something</button>
+</section>
+
+</main>
+
+<script src="random.js"></script>
 
 </body>
 </html>
