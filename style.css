@@ -471,3 +471,35 @@ opacity: 1;
 font-weight: 600;
 
 }
+
+/* navigation underline animation */
+
+.sidebar a {
+
+position: relative;
+
+}
+
+.sidebar a::after {
+
+content: "";
+
+position: absolute;
+
+left: 0;
+bottom: -3px;
+
+width: 0;
+height: 1px;
+
+background: white;
+
+transition: width 0.25s ease;
+
+}
+
+.sidebar a:hover::after {
+
+width: 100%;
+
+}
