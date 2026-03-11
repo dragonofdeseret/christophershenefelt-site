@@ -217,6 +217,26 @@ box-shadow:
   margin-top: 40px;
 }
 
+.art-thumb {
+position: relative;
+display: block;
+}
+
+.art-caption {
+position: absolute;
+bottom: 10px;
+left: 10px;
+font-size: 14px;
+background: rgba(0,0,0,0.65);
+padding: 6px 10px;
+opacity: 0;
+transition: opacity 0.25s;
+}
+
+.art-thumb:hover .art-caption {
+opacity: 1;
+}
+
 
 /* ---------- RANDOM BUTTON ---------- */
 
@@ -375,5 +395,33 @@ text-align: center;
 font-family: Baskerville, "Libre Baskerville", Georgia, serif;
 
 }
+
+}
+/* ----------  SERIES GALLERY ---------- */
+
+.series-gallery {
+
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+gap: 20px;
+
+margin-top: 30px;
+
+}
+
+.series-gallery img {
+
+width: 100%;
+
+border-radius: 4px;
+
+background: #111;
+
+padding: 8px;
+
+box-shadow:
+0 20px 40px rgba(0,0,0,0.6);
 
 }
