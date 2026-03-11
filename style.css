@@ -331,3 +331,39 @@ button:hover {
 .art-description p:first-child {
   text-indent: 0;
 }
+
+/* ---------- GUESTBOOK --------- */
+
+.guestbook-intro {
+
+max-width: 520px;
+margin-bottom: 40px;
+color: #bbb;
+line-height: 1.7;
+
+}
+
+.guestbook-intro p {
+
+margin-bottom: 16px;
+
+}
+
+hr {
+
+border: none;
+border-top: 1px solid rgba(255,255,255,0.1);
+margin: 40px 0;
+
+.guestbook-outro {
+
+margin-top: 60px;
+
+font-style: italic;
+
+opacity: 0.6;
+
+text-align: center;
+
+}
+}
