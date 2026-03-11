@@ -124,7 +124,6 @@ p {
   margin: 12px 0;
 }
 
-
 /* ---------- BUTTONS ---------- */
 
 button {
@@ -143,7 +142,6 @@ button:hover {
   background: white;
   color: black;
 }
-
 
 /* ---------- ART GALLERY ---------- */
 
@@ -177,27 +175,29 @@ button:hover {
     0 0 30px rgba(255,255,255,0.04);
 }
 
-
 /* ---------- ARTWORK PAGE ---------- */
 
 .artwork-page {
   max-width: 900px;
 }
 
+/* Gallery-Style Display */
+
 .art-image img {
-  width: 100%;
-  max-height: 80vh;
 
-  object-fit: contain;
+max-height: 82vh;
 
-  margin-top: 20px;
+background: #111;
 
-  background: #111;
-  padding: 10px;
+padding: 12px;
 
-  border-radius: 4px;
+border-radius: 4px;
 
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+box-shadow:
+0 30px 60px rgba(0,0,0,0.75),
+0 8px 20px rgba(0,0,0,0.45),
+0 0 0 1px rgba(255,255,255,0.05);
+
 }
 
 .art-details {
@@ -366,4 +366,14 @@ opacity: 0.6;
 text-align: center;
 
 }
+
+/* ----------  GISCUS TYPOGRAPHY ---------- */
+
+.giscus,
+.giscus-frame {
+
+font-family: Baskerville, "Libre Baskerville", Georgia, serif;
+
+}
+
 }
