@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+<meta charset="UTF-8">
 <title>Archive - Christopher Shenefelt</title>
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -15,9 +18,9 @@
 <h1>Christopher Shenefelt</h1>
 
 <a href="index.html">Home</a>
+<a href="archive.html" class="active">Archive</a>
 <a href="art.html">Art</a>
 <a href="writing.html">Writing</a>
-<a href="archive.html" class="active">Archive</a>
 <a href="now.html">Now</a>
 <a href="guestbook.html">Guestbook</a>
 <a href="bio.html">Bio</a>
@@ -28,63 +31,11 @@
 
 <h1>Archive</h1>
 
-<div id="archive-container"></div>
+<p class="gallery-intro">
+A chronological record of artworks and writings.
+</p>
 
-<script>
-
-fetch('artworks.json')
-
-.then(response => response.json())
-
-.then(data => {
-
-const container = document.getElementById("archive-container");
-
-let grouped = {};
-
-data.forEach(item => {
-
-if(!grouped[item.year]) grouped[item.year] = [];
-
-grouped[item.year].push(item);
-
-});
-
-Object.keys(grouped).sort((a,b)=>b-a).forEach(year => {
-
-let section = document.createElement("div");
-
-section.className = "timeline-year";
-
-let title = document.createElement("h2");
-
-title.textContent = year;
-
-section.appendChild(title);
-
-let list = document.createElement("ul");
-
-list.className = "list";
-
-grouped[year].forEach(art => {
-
-let li = document.createElement("li");
-
-li.innerHTML = `<a href="${art.link}">${art.title}</a>`;
-
-list.appendChild(li);
-
-});
-
-section.appendChild(list);
-
-container.appendChild(section);
-
-});
-
-});
-
-</script>
+<ul class="archive-list"></ul>
 
 </main>
 

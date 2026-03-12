@@ -1,27 +1,26 @@
-// build artwork gallery automatically
+// ------------------------------
+// BUILD ART GALLERY
+// ------------------------------
 
 function buildGallery() {
 
 const gallery = document.querySelector(".gallery");
 
-if (!gallery) return;
+if (!gallery || !window.artworks) return;
 
 gallery.innerHTML = "";
 
 artworks.forEach(art => {
 
 const link = document.createElement("a");
-
 link.href = art.page;
 
 const img = document.createElement("img");
-
 img.src = art.image;
-
 img.alt = art.title;
+img.loading = "lazy";
 
 link.appendChild(img);
-
 gallery.appendChild(link);
 
 });
@@ -29,10 +28,13 @@ gallery.appendChild(link);
 }
 
 
-
-// random artwork
+// ------------------------------
+// RANDOM ARTWORK BUTTON
+// ------------------------------
 
 function randomArtwork() {
+
+if (!window.artworks) return;
 
 const art = artworks[Math.floor(Math.random() * artworks.length)];
 
@@ -40,15 +42,36 @@ window.location.href = art.page;
 
 }
 
+// -----------------------------
+// AUTO FOOTER
+// -----------------------------
+
+function insertFooter() {
+
+const footer = document.createElement("footer");
+footer.className = "site-footer";
+
+footer.innerHTML = `
+<p>© ${new Date().getFullYear()} Christopher Shenefelt | The Dragon of Deseret</p>
+<p class="footer-note">All artwork and writing © their respective years</p>
+`;
+
+document.querySelector(".content").appendChild(footer);
+
+}
+
+insertFooter();
 
 
-// build archive automatically
+// ------------------------------
+// BUILD ARCHIVE
+// ------------------------------
 
 function buildArchive() {
 
 const archive = document.querySelector(".archive-list");
 
-if (!archive) return;
+if (!archive || !window.artworks) return;
 
 archive.innerHTML = "";
 
@@ -65,6 +88,13 @@ archive.appendChild(li);
 }
 
 
+// ------------------------------
+// RUN SCRIPTS WHEN PAGE LOADS
+// ------------------------------
+
+document.addEventListener("DOMContentLoaded", () => {
 
 buildGallery();
 buildArchive();
+
+});
