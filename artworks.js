@@ -143,7 +143,7 @@ page: "art/2023-05-18.html"
 {
 title: "May 13, 2023",
 year: 2023,
-image: "images/art/2023/2023-05-13_2.jpeg",
+image: "images/art/2023/2023-05-13_2.jpg",
 page: "art/2023-05-13.html"
 },
   
