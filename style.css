@@ -43,7 +43,11 @@ gap: 18px;
 }
 
 .content {
+
 flex: 1;
+
+display: flex;
+flex-direction: column;
 
 padding: 40px 60px;
 
@@ -54,6 +58,7 @@ line-height: 1.75;
 
 hanging-punctuation: first allow-end;
 hyphens: auto;
+
 }
 
 /* =====================================
@@ -276,6 +281,32 @@ box-shadow:
 
 }
 
+.image-viewer {
+
+position: fixed;
+inset: 0;
+
+background: rgba(0,0,0,0.92);
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+z-index: 999;
+
+}
+
+.image-viewer img {
+
+max-width: 92%;
+max-height: 92%;
+
+box-shadow: 0 30px 80px rgba(0,0,0,0.8);
+
+cursor: zoom-out;
+
+}
+
 /* =====================================
 ARTWORK PAGE
 ===================================== */
@@ -363,6 +394,22 @@ HOMEPAGE
 
 .homepage {
 max-width: 800px;
+}
+
+.home-anchor {
+
+margin-top: 120px;
+
+opacity: 0.75;
+
+}
+
+.home-line {
+
+font-size: 20px;
+
+letter-spacing: 0.4px;
+
 }
 
 .intro h2 {
@@ -532,25 +579,14 @@ gap: 16px;
 .site-footer {
 
 letter-spacing: 0.3px;
-margin-top: 120px;
+
+margin-top: auto;
+
 padding-top: 30px;
 
 border-top: 1px solid rgba(255,255,255,0.08);
 
 font-size: 14px;
-opacity: 0.6;
-
-}
-
-.site-footer p {
-
-margin: 6px 0;
-
-}
-
-.footer-note {
-
-font-size: 13px;
 opacity: 0.6;
 
 }

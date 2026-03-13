@@ -27,6 +27,30 @@ gallery.appendChild(link);
 
 
 /* =========================
+   IMAGE VIEWER
+========================= */
+
+document.addEventListener("click", e => {
+
+if (e.target.matches(".series-gallery img, .art-image img")) {
+
+const viewer = document.createElement("div");
+
+viewer.className = "image-viewer";
+
+viewer.innerHTML = `<img src="${e.target.src}">`;
+
+viewer.onclick = () => viewer.remove();
+
+document.body.appendChild(viewer);
+
+}
+
+});
+
+}
+
+/* =========================
    BUILD ARCHIVE PAGE
 ========================= */
 
@@ -48,7 +72,6 @@ years[art.year] = [];
 years[art.year].push(art);
 
 });
-
 
 Object.keys(years)
 .sort((a,b) => b - a)
@@ -105,6 +128,7 @@ window.location.href = random.page;
 function insertFooter() {
 
 const footer = document.createElement("footer");
+
 footer.className = "site-footer";
 
 footer.innerHTML = `
@@ -112,10 +136,9 @@ footer.innerHTML = `
 <p class="footer-note">All artwork and writing © their respective years.</p>
 `;
 
-document.querySelector(".content").appendChild(footer);
+document.querySelector("main").appendChild(footer);
 
 }
-
 
 /* =========================
    RUN EVERYTHING
