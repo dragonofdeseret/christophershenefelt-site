@@ -23,8 +23,6 @@ gallery.appendChild(link);
 
 });
 
-}
-
 
 /* =========================
    IMAGE VIEWER
