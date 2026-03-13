@@ -130,8 +130,8 @@ const footer = document.createElement("footer");
 footer.className = "site-footer";
 
 footer.innerHTML = `
-<p>© ${new Date().getFullYear()} Christopher Shenefelt</p>
-<p class="footer-note">All artwork and writing © their respective years.</p>
+<p>© ${new Date().getFullYear()} Christopher Shenefelt | The Dragon of Deseret</p>
+<p class="footer-note">All artwork and writing © their respective years</p>
 `;
 
 document.querySelector("main").appendChild(footer);
