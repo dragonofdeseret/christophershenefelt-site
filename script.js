@@ -9,7 +9,9 @@ if (!gallery) return;
 
 gallery.innerHTML = "";
 
-artworks.forEach(art => {
+[...artworks]
+.sort((a,b) => b.page.localeCompare(a.page))
+.forEach(art => {
 
 const link = document.createElement("a");
 link.href = art.page;
@@ -61,7 +63,9 @@ archive.innerHTML = "";
 
 const years = {};
 
-artworks.forEach(art => {
+[...artworks]
+.sort((a,b) => b.page.localeCompare(a.page))
+.forEach(art => {
 
 if (!years[art.year]) {
 years[art.year] = [];
