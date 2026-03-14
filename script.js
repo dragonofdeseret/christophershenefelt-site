@@ -9,9 +9,29 @@ if (!gallery) return;
 
 gallery.innerHTML = "";
 
-[...artworks]
-.sort((a,b) => b.page.localeCompare(a.page))
-.forEach(art => {
+const years = {};
+
+artworks.forEach(art => {
+if (!years[art.year]) {
+years[art.year] = [];
+}
+years[art.year].push(art);
+});
+
+Object.keys(years)
+.sort((a,b) => b - a)
+.forEach(year => {
+
+const section = document.createElement("div");
+section.className = "gallery-year";
+
+const heading = document.createElement("h2");
+heading.textContent = year;
+
+const grid = document.createElement("div");
+grid.className = "gallery-grid";
+
+years[year].forEach(art => {
 
 const link = document.createElement("a");
 link.href = art.page;
@@ -21,10 +41,17 @@ img.src = art.image;
 img.alt = art.title;
 
 link.appendChild(img);
-gallery.appendChild(link);
+grid.appendChild(link);
 
 });
 
+section.appendChild(heading);
+section.appendChild(grid);
+gallery.appendChild(section);
+
+});
+
+}
 
 /* =========================
    IMAGE VIEWER
