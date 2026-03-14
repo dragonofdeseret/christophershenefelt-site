@@ -75,7 +75,6 @@ document.body.appendChild(viewer);
 
 });
 
-}
 
 /* =========================
    BUILD ARCHIVE PAGE
