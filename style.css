@@ -209,7 +209,7 @@ margin-bottom: 70px;
 .archive-year h2 {
 
 position: sticky;
-top: 0;
+top: -2px;
 
 z-index: 20;
 
