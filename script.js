@@ -146,6 +146,8 @@ document.querySelector("main").appendChild(footer);
    RUN EVERYTHING
 ========================= */
 
-buildGallery();
-buildArchive();
-insertFooter();
+document.addEventListener("DOMContentLoaded", () => {
+  buildGallery();
+  buildArchive();
+  insertFooter();
+});
