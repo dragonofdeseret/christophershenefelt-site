@@ -90,9 +90,7 @@ archive.innerHTML = "";
 
 const years = {};
 
-[...artworks]
-.sort((a,b) => b.page.localeCompare(a.page))
-.forEach(art => {
+artworks.forEach(art => {
 
 if (!years[art.year]) {
 years[art.year] = [];
@@ -107,36 +105,36 @@ Object.keys(years)
 .forEach(year => {
 
 const section = document.createElement("div");
-section.className = "timeline-year";
+section.className = "archive-year";
 
 const heading = document.createElement("h2");
 heading.textContent = year;
 
-const grid = document.createElement("div");
-grid.className = "gallery";
+const list = document.createElement("div");
+list.className = "archive-list";
 
 years[year].forEach(art => {
 
-const link = document.createElement("a");
-link.href = art.page;
+const row = document.createElement("a");
+row.className = "archive-row";
+row.href = art.page;
 
-const img = document.createElement("img");
-img.src = art.image;
-img.alt = art.title;
+row.innerHTML = `
+<span class="archive-title">${art.title.replace(", " + art.year, "")}</span>
+<img src="${art.image}" alt="${art.title}">
+`;
 
-link.appendChild(img);
-grid.appendChild(link);
+list.appendChild(row);
 
 });
 
 section.appendChild(heading);
-section.appendChild(grid);
+section.appendChild(list);
 archive.appendChild(section);
 
 });
 
 }
-
 
 /* =========================
    RANDOM ARTWORK BUTTON
