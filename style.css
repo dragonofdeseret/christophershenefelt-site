@@ -2,6 +2,10 @@
 GLOBAL
 ===================================== */
 
+html {
+scroll-behavior: smooth;
+}
+
 body {
 background-color: #0b0b0b;
 background-image: url("images/ui/texture.png");
@@ -203,13 +207,20 @@ margin-top: 40px;
 margin-bottom: 70px;
 }
 
+/* anchor offset for sticky headers */
+
+.gallery-year,
+.archive-year {
+scroll-margin-top: 70px;
+}
+
 /* sticky year headers */
 
 .gallery-year h2,
 .archive-year h2 {
 
 position: sticky;
-top: -2px;
+top: 0px;
 
 z-index: 20;
 
@@ -428,6 +439,34 @@ opacity: 0.7;
 }
 
 .art-navigation a:hover {
+opacity: 1;
+}
+
+/* =====================================
+YEAR NAVIGATION
+===================================== */
+
+.year-nav {
+
+margin-bottom: 30px;
+
+font-size: 15px;
+
+opacity: 0.7;
+
+}
+
+.year-nav a {
+
+text-decoration: none;
+
+color: inherit;
+
+margin: 0 4px;
+
+}
+
+.year-nav a:hover {
 opacity: 1;
 }
 

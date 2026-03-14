@@ -136,6 +136,46 @@ archive.appendChild(section);
 }
 
 /* =========================
+   YEAR NAVIGATION  
+========================= */
+
+function buildYearNav() {
+
+const nav = document.getElementById("year-nav");
+
+if (!nav) return;
+
+const years = document.querySelectorAll(".gallery-year, .archive-year");
+
+if (!years.length) return;
+
+nav.innerHTML = "Jump to: ";
+
+years.forEach((section, index) => {
+
+const year = section.querySelector("h2").textContent;
+
+const id = "year-" + year;
+
+section.id = id;
+
+const link = document.createElement("a");
+
+link.href = "#" + id;
+
+link.textContent = year;
+
+nav.appendChild(link);
+
+if (index < years.length - 1) {
+nav.append(" · ");
+}
+
+});
+
+}
+
+/* =========================
    PREVIOUS / NEXT ARTWORK
 ========================= */
 
@@ -209,6 +249,7 @@ document.querySelector("main").appendChild(footer);
 document.addEventListener("DOMContentLoaded", () => {
   buildGallery();
   buildArchive();
+  buildYearNav();
   buildArtNavigation();
   insertFooter();
 });
