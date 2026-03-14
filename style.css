@@ -211,8 +211,6 @@ margin-bottom: 70px;
 position: sticky;
 top: 0;
 
-background: #0b0b0b;
-
 z-index: 20;
 
 font-size: 1.6rem;
@@ -226,7 +224,7 @@ border-bottom: 1px solid #bbb;
 font-weight: normal;
 letter-spacing: 1px;
 
-box-shadow: 0 2px 0 rgba(0,0,0,0.5);
+background: transparent;
 
 }
 
