@@ -369,6 +369,25 @@ text-indent: 1.5em;
 text-indent: 0;
 }
 
+/* ART NAVIGATION */
+
+.art-navigation {
+display: flex;
+justify-content: space-between;
+margin-top: 40px;
+font-size: 0.9rem;
+}
+
+.art-navigation a {
+text-decoration: none;
+color: inherit;
+opacity: 0.7;
+}
+
+.art-navigation a:hover {
+opacity: 1;
+}
+
 /* =====================================
 RANDOM BUTTON
 ===================================== */

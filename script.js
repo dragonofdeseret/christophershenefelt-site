@@ -136,6 +136,42 @@ archive.appendChild(section);
 }
 
 /* =========================
+   PREVIOUS / NEXT ARTWORK
+========================= */
+
+function buildArtNavigation() {
+
+const container = document.querySelector(".art-navigation");
+if (!container) return;
+
+const currentPage = window.location.pathname.split("/").pop();
+
+const index = artworks.findIndex(art => art.page.includes(currentPage));
+
+if (index === -1) return;
+
+const prev = artworks[index + 1];
+const next = artworks[index - 1];
+
+container.innerHTML = "";
+
+if (prev) {
+const prevLink = document.createElement("a");
+prevLink.href = "../" + prev.page;
+prevLink.textContent = "← " + prev.title;
+container.appendChild(prevLink);
+}
+
+if (next) {
+const nextLink = document.createElement("a");
+nextLink.href = "../" + next.page;
+nextLink.textContent = next.title + " →";
+container.appendChild(nextLink);
+}
+
+}
+
+/* =========================
    RANDOM ARTWORK BUTTON
 ========================= */
 
@@ -173,5 +209,6 @@ document.querySelector("main").appendChild(footer);
 document.addEventListener("DOMContentLoaded", () => {
   buildGallery();
   buildArchive();
+  buildArtNavigation();
   insertFooter();
 });
