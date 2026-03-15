@@ -34,33 +34,69 @@ year: 2024,
 image: "images/art/2024/2024-01-28_1.jpeg",
 page: "art/2024-01-28.html"
 },
-   
+
+ 
 {
-title: "December 14, 2023",
+title: "December 14, 2023 | #2",
+year: 2023,
+image: "images/art/2023/2023-12-14_2.jpeg",
+page: "art/2023-12-14_2.html"
+},
+    
+{
+title: "December 14, 2023 | #1",
 year: 2023,
 image: "images/art/2023/2023-12-14_1.jpeg",
-page: "art/2023-12-14.html"
+page: "art/2023-12-14_1.html"
 },
-   
+ 
 {
-title: "December 10, 2023",
+title: "December 10, 2023 | #3",
+year: 2023,
+image: "images/art/2023/2023-12-10_3.jpeg",
+page: "art/2023-12-10_3.html"
+},
+  
+{
+title: "December 10, 2023 | #2",
+year: 2023,
+image: "images/art/2023/2023-12-10_2.jpeg",
+page: "art/2023-12-10_2.html"
+},
+    
+{
+title: "December 10, 2023 | #1",
 year: 2023,
 image: "images/art/2023/2023-12-10_1.jpeg",
-page: "art/2023-12-10.html"
+page: "art/2023-12-10_1.html"
 },
-   
+ 
 {
-title: "December 6, 2023",
+title: "December 6, 2023 | #2",
+year: 2023,
+image: "images/art/2023/2023-12-06_2.jpeg",
+page: "art/2023-12-06_2.html"  
+},
+    
+{
+title: "December 6, 2023 | #1",
 year: 2023,
 image: "images/art/2023/2023-12-06_1.jpeg",
-page: "art/2023-12-06.html"
+page: "art/2023-12-06_1.html"
 },
-   
+
 {
-title: "November 13, 2023",
+title: "November 13, 2023 | #2",
+year: 2023,
+image: "images/art/2023/2023-11-13_2.jpeg",
+page: "art/2023-11-13_2.html"  
+},
+    
+{
+title: "November 13, 2023 | #1",
 year: 2023,
 image: "images/art/2023/2023-11-13_1.jpeg",
-page: "art/2023-11-13.html"
+page: "art/2023-11-13_1.html"
 },
    
 {
@@ -76,19 +112,47 @@ year: 2023,
 image: "images/art/2023/2023-10-23.jpeg",
 page: "art/2023-10-23.html"
 },
-   
+ 
 {
-title: "August 26, 2023",
+title: "August 26, 2023 | #4",
+year: 2023,
+image: "images/art/2023/2023-08-26_4.jpeg",
+page: "art/2023-08-26_4.html"
+},
+  
+{
+title: "August 26, 2023 | #3",
 year: 2023,
 image: "images/art/2023/2023-08-26_3.jpeg",
-page: "art/2023-08-26.html"
+page: "art/2023-08-26_3.html"
+},
+  
+{
+title: "August 26, 2023 | #2",
+year: 2023,
+image: "images/art/2023/2023-08-26_2.jpeg",
+page: "art/2023-08-26_2.html"
+},
+    
+{
+title: "August 26, 2023 | #1",
+year: 2023,
+image: "images/art/2023/2023-08-26_1.jpeg",
+page: "art/2023-08-26_1.html"
+},
+
+{
+title: "August 13, 2023 | #2",
+year: 2023,
+image: "images/art/2023/2023-08-13_2.jpeg",
+page: "art/2023-08-13_2.html"  
 },
    
 {
-title: "August 13, 2023",
+title: "August 13, 2023 | #1",
 year: 2023,
 image: "images/art/2023/2023-08-13_1.jpeg",
-page: "art/2023-08-13.html"
+page: "art/2023-08-13_1.html"
 },
    
 {
@@ -97,12 +161,19 @@ year: 2023,
 image: "images/art/2023/2023-08-06.jpg",
 page: "art/2023-08-06.html"
 },
-   
+ 
 {
-title: "July 16, 2023",
+title: "July 16, 2023 | #2",
 year: 2023,
 image: "images/art/2023/2023-07-16_2.jpeg",
-page: "art/2023-07-16.html"
+page: "art/2023-07-16_2.html"  
+},
+    
+{
+title: "July 16, 2023 | #1",
+year: 2023,
+image: "images/art/2023/2023-07-16_1.jpeg",
+page: "art/2023-07-16_1.html"
 },
    
 {
@@ -125,33 +196,89 @@ year: 2023,
 image: "images/art/2023/2023-05-28.jpeg",
 page: "art/2023-05-28.html"
 },
-   
+
 {
-title: "May 21, 2023",
+title: "May 21, 2023 | #3",
 year: 2023,
 image: "images/art/2023/2023-05-21_3.jpeg",
-page: "art/2023-05-21.html"
+page: "art/2023-05-21_3.html"  
 },
-   
+ 
 {
-title: "May 18, 2023",
+title: "May 21, 2023 | #2",
+year: 2023,
+image: "images/art/2023/2023-05-21_2.jpeg",
+page: "art/2023-05-21_2.html"  
+},
+    
+{
+title: "May 21, 2023 | #1",
+year: 2023,
+image: "images/art/2023/2023-05-21_1.jpeg",
+page: "art/2023-05-21_1.html"
+},
+ 
+{
+title: "May 18, 2023 | #2",
 year: 2023,
 image: "images/art/2023/2023-05-18_2.jpeg",
-page: "art/2023-05-18.html"
+page: "art/2023-05-18_2.html"  
 },
-   
+    
 {
-title: "May 13, 2023",
+title: "May 18, 2023 | #1",
 year: 2023,
-image: "images/art/2023/2023-05-13_2.jpg",
-page: "art/2023-05-13.html"
+image: "images/art/2023/2023-05-18_1.jpeg",
+page: "art/2023-05-18_1.html"
+},
+ 
+{
+title: "May 13, 2023 | #3",
+year: 2023,
+image: "images/art/2023/2023-05-13_3.jpg", 
+page: "art/2023-05-13_3.html"  
 },
   
 {
-title: "May 7, 2023",
+title: "May 13, 2023 | #2",
+year: 2023,
+image: "images/art/2023/2023-05-13_2.jpg", 
+page: "art/2023-05-13_2.html"  
+},
+    
+{
+title: "May 13, 2023 | #1",
+year: 2023,
+image: "images/art/2023/2023-05-13_1.jpeg",
+page: "art/2023-05-13_1.html"
+},
+
+{
+title: "May 7, 2023 | #4",
+year: 2023,
+image: "images/art/2023/2023-05-07_4.jpeg",
+page: "art/2023-05-07_4.html"  
+},
+ 
+{
+title: "May 7, 2023 | #3",
+year: 2023,
+image: "images/art/2023/2023-05-07_3.jpeg",
+page: "art/2023-05-07_3.html"  
+},
+ 
+{
+title: "May 7, 2023 | #2",
+year: 2023,
+image: "images/art/2023/2023-05-07_2.jpeg",
+page: "art/2023-05-07_2.html"  
+},
+   
+{
+title: "May 7, 2023 | #1",
 year: 2023,
 image: "images/art/2023/2023-05-07_1.jpeg",
-page: "art/2023-05-07.html"
+page: "art/2023-05-07_1.html"
 },
   
 {
@@ -160,19 +287,40 @@ year: 2022,
 image: "images/art/2022/2022-09-19.jpeg",
 page: "art/2022-09-19.html"
 },
-  
+
 {
-title: "August 28, 2022",
+title: "August 28, 2022 | #3",
 year: 2022,
-image: "images/art/2022/2022-08-28_1.jpeg",
-page: "art/2022-08-28.html"
+image: "images/art/2022/2022-08-28_3.jpeg",
+page: "art/2022-08-28_3.html"  
+},
+
+{
+title: "August 28, 2022 | #2",
+year: 2022,
+image: "images/art/2022/2022-08-28_2.jpeg",
+page: "art/2022-08-28_2.html"  
 },
   
 {
-title: "August 14, 2022",
+title: "August 28, 2022 | #1",
+year: 2022,
+image: "images/art/2022/2022-08-28_1.jpeg",
+page: "art/2022-08-28_1.html"
+},
+
+{
+title: "August 14, 2022 | #2",
 year: 2022,
 image: "images/art/2022/2022-08-14_2.jpeg",
-page: "art/2022-08-14.html"
+page: "art/2022-08-14_2.html"  
+},
+   
+{
+title: "August 14, 2022 | #1",
+year: 2022,
+image: "images/art/2022/2022-08-14_1.jpeg",
+page: "art/2022-08-14_1.html"
 },
   
 {
@@ -193,7 +341,7 @@ page: "art/2022-08-01.html"
 title: "July 15, 2022",
 year: 2022,
 image: "images/art/2022/2022-07-15_1.jpeg",
-page: "art/2022-07-15.html"
+page: "art/2022-07-15_1.html"
 },
   
 {
@@ -209,12 +357,33 @@ year: 2022,
 image: "images/art/2022/2022-06-23.jpeg",
 page: "art/2022-06-23.html"
 },
-  
+
 {
-title: "June 18, 2022",
+title: "June 18, 2022 | #4", 
+year: 2022,
+image: "images/art/2022/2022-06-18_4.jpeg",
+page: "art/2022-06-18_4.html"  
+},
+
+{
+title: "June 18, 2022 | #3", 
+year: 2022,
+image: "images/art/2022/2022-06-18_3.jpeg",
+page: "art/2022-06-18_3.html"  
+},
+
+{
+title: "June 18, 2022 | #2", 
 year: 2022,
 image: "images/art/2022/2022-06-18_2.jpeg",
-page: "art/2022-06-18.html"
+page: "art/2022-06-18_2.html"  
+},
+  
+{
+title: "June 18, 2022 | #1",
+year: 2022,
+image: "images/art/2022/2022-06-18_1.jpg",
+page: "art/2022-06-18_1.html"
 },
   
 {
@@ -258,12 +427,27 @@ year: 2022,
 image: "images/art/2022/2022-05-26_2.jpeg",
 page: "art/2022-05-26.html"
 },
-   
+
+
 {
-title: "May 23, 2022",
+title: "May 23, 2022 | #3",
+year: 2022,
+image: "images/art/2022/2022-05-23_5.jpeg",
+page: "art/2022-05-23_3.html"  
+},
+
+{
+title: "May 23, 2022 | #2",
 year: 2022,
 image: "images/art/2022/2022-05-23_3.jpeg",
-page: "art/2022-05-23.html"
+page: "art/2022-05-23_2.html"  
+},
+   
+{
+title: "May 23, 2022 | #1",
+year: 2022,
+image: "images/art/2022/2022-05-23_1.jpeg",
+page: "art/2022-05-23_1.html"
 },
   
 {
@@ -340,7 +524,7 @@ page: "art/2022-03-08_2.html"
 title: "March 8, 2022 | #1",
 year: 2022,
 image: "images/art/2022/2022-03-08_1.jpeg",
-page: "art/2022-03-08.html"
+page: "art/2022-03-08_1.html"
 },
 
 {
@@ -354,7 +538,7 @@ page: "art/2022-03-03_2.html"
 title: "March 3, 2022 | #1",
 year: 2022,
 image: "images/art/2022/2022-03-03_1.jpeg",
-page: "art/2022-03-03.html"
+page: "art/2022-03-03_1.html"
 },
 
 {
