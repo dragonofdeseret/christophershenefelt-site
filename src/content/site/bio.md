@@ -59,7 +59,6 @@ Temple Endowment
 
 September 25, 2008
 - Mission to Cape Verde, Praia, Africa.
-- Sleep paralysis vision: [Called to Purge.](/altered-states/CtP)
 
 January 2009 – January 2014
 Stage Manager for Val A. Browning Center for the Performing Arts
